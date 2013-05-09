@@ -25,7 +25,7 @@ class CsvHelper extends AppHelper {
         $this->line = array();
     }
 
-    function addRow() {
+    function addRow($row) {
         fputcsv($this->buffer, $row, $this->delimiter, $this->enclosure);
     }
 
